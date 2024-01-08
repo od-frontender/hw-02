@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 const animals = [
   { type: `turtle`, icon: `🐢` },
   { type: `octopus`, icon: `🐙` },
   { type: `fish`, icon: `🐠` },
   { type: `flamingo`, icon: `🦩` },
-  { type: `penguin`, icon: `🐧` },
+  { type: 'penguin', icon: `🐧` },
 ];
 
 export default class Table extends Component {
@@ -29,12 +29,12 @@ export default class Table extends Component {
       <>
         <table>
           <tbody>
-            {animals.map((item) => (
+            {animals.map(item => (
               <>
                 <tr
                   style={{
-                    color: isActive ? "green" : color,
-                    fontWeight: isActive ? "bold" : "normal",
+                    color: isActive ? 'green' : color,
+                    fontWeight: isActive ? 'bold' : 'normal',
                   }}
                 >
                   {item.type}
