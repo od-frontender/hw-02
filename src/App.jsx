@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from 'react';
 import Table from './components/Table';
 function App() {
-
   const [animals, setAnimals] = useState([
     { type: `turtle`, icon: `🐢` },
     { type: `octopus`, icon: `🐙` },
@@ -11,7 +10,7 @@ function App() {
   ]);
   return (
     <>
-      <Table list={animals}/>
+      <Table list={animals} />
     </>
   );
 }
